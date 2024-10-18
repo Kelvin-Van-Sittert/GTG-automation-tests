@@ -22,20 +22,17 @@ namespace GTG_automation_tests.Objects
             Information = information;
             Message = message;
         }
-        public static List<Log> GetMatchingLogs(List<Log> logs, string ID, string responseOrRequest)
+        public static List<Log> GetMatchingRequestLogs(List<Log> logs, string ID, string whatToCheck)
+        {
+            List<Log> matchingLogs;
+           
+            return matchingLogs = logs.Where(log => log.Message.Contains(ID) && log.Message.Contains(whatToCheck) && log.Message.Contains("->")).ToList();
+        }
+        public static List<Log> GetMatchingResponseLogs(List<Log> logs, string ID, string whatToCheck)
         {
             List<Log> matchingLogs;
 
-            if (responseOrRequest == "Request")
-            {
-                return matchingLogs = logs.Where(log => log.Message.Contains("43a62e98-928c-ef11-8aab-005056b9f3c3") && log.Message.Contains(responseOrRequest) && log.Message.Contains("xml") && !log.Message.Contains("Response")).ToList();
-            }
-            else
-            {
-                return matchingLogs = logs.Where(log => log.Message.Contains("43a62e98-928c-ef11-8aab-005056b9f3c3") && log.Message.Contains(responseOrRequest) && log.Message.Contains("xml") && !log.Message.Contains("Request")).ToList();
-            }
-            
-
+            return matchingLogs = logs.Where(log => log.Message.Contains(ID) && log.Message.Contains(whatToCheck) && log.Message.Contains("<-")).ToList();
         }
 
     }

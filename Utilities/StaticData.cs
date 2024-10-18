@@ -14,10 +14,10 @@ namespace GTG_automation_tests.Utilities
         //Log file path
         //Down the line we can update this to be in dictated by the dev box URL
         public const string A70_LOG_PATH = "//uk1-odt-cete-01.creditcall.co.uk/c$/CardEaseV2/Logs/A70Server/A70Server.log";
-        public const string ELAVON8583_PROCESSOR = "//uk1-odt-cete-01.creditcall.co.uk/c$/CardEaseV2/Logs/CardEaseV2Elavon8583ProcessorHttpServer/CardEaseV2Elavon8583Processor.HttpServer.log";
-        public const string ELAVON8583_SETTLER = "//uk1-odt-cete-01.creditcall.co.uk/c$/CardEaseV2/Logs/CardEaseV2Elavon8583Settler/CardEaseV2Elavon8583Settler.log";
-        public const string TSYS_PROCESSOR = "//uk1-odt-cete-01.creditcall.co.uk/c$/CardEaseV2/Logs/CardEaseV2TsysSierraEmvProcessorHttpServer/CardEaseV2TsysSierraEmvProcessor.HttpServer.log";
-        public const string TSYS_SETTLER = "//uk1-odt-cete-01.creditcall.co.uk/c$/CardEaseV2/Logs/CardEaseV2Elavon8583Settler/CardEaseV2Elavon8583Settler.log";
+        public const string ELAVON8583_PROCESSOR_LOG_PATH = "//uk1-odt-cete-01.creditcall.co.uk/c$/CardEaseV2/Logs/CardEaseV2Elavon8583ProcessorHttpServer/CardEaseV2Elavon8583Processor.HttpServer.log";
+        public const string ELAVON8583_SETTLER_LOG_PATH = "//uk1-odt-cete-01.creditcall.co.uk/c$/CardEaseV2/Logs/CardEaseV2Elavon8583Settler/CardEaseV2Elavon8583Settler.log";
+        public const string TSYS_PROCESSOR_LOG_PATH = "//uk1-odt-cete-01.creditcall.co.uk/c$/CardEaseV2/Logs/CardEaseV2TsysSierraEmvProcessorHttpServer/CardEaseV2TsysSierraEmvProcessor.HttpServer.log";
+        public const string TSYS_SETTLER_LOG_PATH = "//uk1-odt-cete-01.creditcall.co.uk/c$/CardEaseV2/Logs/CardEaseV2Elavon8583Settler/CardEaseV2Elavon8583Settler.log";
 
         //Get a list of merchants and the corrosponding acquirer for each one
         //E.g. When the merchant is relavent to Tsys we should look in the Tsys logs
